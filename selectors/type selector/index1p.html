@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Personal Information Section</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required />
+    <br />
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
+    <br />
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required />
+    <h2>Country Selection</h2>
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+      <option value="india">India</option>
+      <option value="canada">Canada</option>
+      <option value="uk">United Kingdom</option>
+      <option value="australia">Australia</option>
+      <option value="germany">Germany</option>
+      <option value="france">France</option>
+      <option value="japan">Japan</option>
+      <option value="china">China</option>
+      <option value="india">India</option>
+      <option value="brazil">Brazil</option>
+    </select>
+    <br />
+
+    <h2>Interests</h2>
+    <input type="checkbox" id="interest1" name="interests" value="sports" />
+    <label for="interest1">Sports</label>
+    <br />
+    <input type="checkbox" id="interest2" name="interests" value="music" />
+    <label for="interest2">Music</label>
+    <br />
+    <input type="checkbox" id="interest3" name="interests" value="travel" />
+    <label for="interest3">Travel</label>
+    <br />
+    <input type="checkbox" id="interest4" name="interests" value="reading" />
+    <label for="interest4">Reading</label>
+    <br />
+    <input type="checkbox" id="interest5" name="interests" value="technology" />
+    <label for="interest5">Technology</label>
+    <br />
+    <h2>Password</h2>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required />
+    <br />
+    <label for="confirm-password">Confirm Password:</label>
+    <input
+      type="password"
+      id="confirm-password"
+      name="confirm-password"
+      required
+    />
+    <br />
+    <h2>Terms and Conditions</h2>
+    <details>
+      <summary>Read Terms and Conditions</summary>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia
+        odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.
+        Nullam ac erat ante. Phasellus ac fringilla dui, nec tempus justo. Nulla
+        facilisi. Suspendisse potenti. Integer ut augue ac lorem mollis varius
+        at in odio.
+      </p>
+    </details>
+    <br />
+    <input type="checkbox" id="agree" name="agree" required />
+    <label for="agree">I agree to the terms and conditions</label>
+    <br /><br />
+
+    <input type="submit" value="Submit" />
+  </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Type of Input Elements In HTML</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 10px;
+        background-color: rgb(246, 233, 217);
+      }
+      .form-group {
+        margin-bottom: 5px;
+        border: radius 1px;
+      }
+      label {
+        display: flex;
+      }
+      input,
+      select,
+      textarea {
+        width: 400px;
+        padding: 8px;
+        border-radius: 5px;
+      }
+      button {
+        padding: auto;
+        background-color: rgb(37, 37, 244);
+        border-color: black;
+        color: aliceblue;
+        border-radius: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>All Types of Input Elements</h2>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="textarea"
+          >Write a short Intro of the Developer previous life lessions</label
+        >
+        <input type="text" id="text" name="text" />
+      </div>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="text" name="text" />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="number">Number</label>
+        <input type="number" id="number" name="number" />
+      </div>
+      <div class="form-group">
+        <label for="tel">Telephone</label>
+        <input type="tel" id="tel" name="tel" />
+      </div>
+      <div class="form-group">
+        <label for="url">URL</label>
+        <input type="url" id="url" name="url" />
+      </div>
+      <div class="form-group">
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" />
+      </div>
+      <div class="form-group">
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time" />
+      </div>
+      <div class="form-group">
+        <label for="datetime-local">LMT</label>
+        <input
+          type="datetime-local"
+          id="datetime-local"
+          name="datetime-local"
+        />
+      </div>
+      <div class="form-group">
+        <label for="color">Color</label>
+        <input type="color" id="color" name="color" />
+      </div>
+      <div class="form-group">
+        <label for="range">Range</label>
+        <input type="range" id="range" name="range" />
+      </div>
+      <div class="form-group">
+        <label>Experience</label>
+        <input
+          type="checkbox"
+          id="checkbox1"
+          name="checkbox1"
+          value="option1"
+        />
+        <label for="checkbox1">Javascript</label>
+        <input
+          type="checkbox"
+          id="checkbox2"
+          name="checkbox2"
+          value="Option 2"
+        />
+        <label for="checkbox2">Java</label>
+        <input
+          type="checkbox"
+          id="checkbox3"
+          name="checkbox3"
+          value="option3"
+        />
+        <label for="checkbox3">Python</label>
+      </div>
+      <div class="form-group">
+        <label>Level</label>
+        <input type="radio" id="radio1" name="radio1" value="Beginner" />
+        <label for="radio1">Beginner</label>
+        <input type="radio" id="radio2" name="radio2" value="Intermediate" />
+        <label for="radio2">Intermediate</label>
+        <input type="radio" id="radio3" name="radio3" value="PRO" />
+        <label for="radio3">PRO</label>
+      </div>
+      <div class="form-group">
+        <label for="select">Works over nights</label>
+        <select id="select" name="select">
+          <option value="Option 1">Less than 2 yr</option>
+          <option value="Option 2">Less than 5 yr</option>
+          <option value="Option 3">More than 10yr</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="file">Upload Here</label>
+        <input type="file" id="file" name="file" />
+      </div>
+      <div class="form-group">
+        <label for="textarea">Write what you want to convey to us</label>
+        <textarea id="textarea" name="textarea" rows="4"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

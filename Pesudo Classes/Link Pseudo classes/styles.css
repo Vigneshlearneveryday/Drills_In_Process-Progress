@@ -1,0 +1,49 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #fdfefe;
+  background-image: url("city-3660779_1280.jpg");
+}
+#blog {
+  width: 80%;
+  margin: 100px auto;
+  padding: 30px;
+  background-color: #f8f9f9;
+  border: radius 15px;
+  box-shadow: 20px 20px 12px #d5d8dc;
+}
+.top-box{
+   background-color: #ecf4fa;
+   padding: 20px;
+   border-radius: 25px;
+   margin-bottom: 50px;
+   text-align: center;
+   box-shadow: 10px 10px 12px #012f4e;
+}
+.related-article {
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 10px 10px 12px #b8b8b8;
+}
+.related-article h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.related-article ul {
+  list-style: none;
+}
+.related-article li {
+  margin-bottom: 8px;
+}
+.related-article a:link {
+  color: #055489;
+  text-decoration: none;
+}
+/* .related-article a:visited {
+  color: rgb(219, 118, 242);
+} */
+.related-article a:hover {
+  color: rgb(246, 27, 15);
+  border-bottom: 2px solid #f39c12 ;
+}

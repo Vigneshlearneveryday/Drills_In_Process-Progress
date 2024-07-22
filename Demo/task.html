@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAY 6 TASK</title>
+  </head>
+  <body>
+    <script>
+      // <!--1.Square each number in an array-->
+
+      const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+      const squareNumbers = numbers.map((number) => number * number);
+      console.log(squareNumbers);
+
+      //  2. Convert an array of strings to uppercase
+
+      const words = ["new", "world", "welcomes", "andcreates", "superhumans"];
+      const upperCaseWords = words.map((word) => word.toUpperCase());
+      console.log(upperCaseWords);
+
+      //   3. Extract the 'name' property from an array of objects
+      const users = [
+        { id: 1, name: "Vasanth" },
+        { id: 2, name: "Wickey" },
+        { id: 3, name: "Hvinoth" },
+        { id: 4, name: "Ram" },
+      ];
+      const userName = users.map((user) => user.name);
+      console.log(userName);
+
+      //   4. Append a suffix to each string in an array
+      const fileNames = ["report", "summary", "data"];
+      const updatedFileNames = fileNames.map((fileName) => fileName + ".txt");
+      console.log(updatedFileNames);
+
+      //   5. Increment each number in an array by 1
+      const numbers1 = [1, 2, 3, 4, 5, 6, 7, 8];
+      const incrementedNumbers = numbers1.map((n) => n + 1);
+      const decrementNumbers = numbers1.map((n) => n - 1);
+      console.log(incrementedNumbers);
+      console.log(decrementNumbers);
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>

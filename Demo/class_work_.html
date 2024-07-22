@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class_Works</title>
+  </head>
+  <body>
+    <script>
+      const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+      //   let oddArray = oddNumbers.map((n) => {
+      //     if (n % 2 == 1) {
+      //       return n;
+      //     } else {
+      //       return null;
+      //     }
+      //   });
+      //   console.log(oddArray);
+      //   let oddArray = [{}];
+      //   numbers.forEach((n) => {
+      //     if (n % 2 == 1) {
+      //       oddArray.push(n);
+      //     }
+      //   });
+      //   console.log(oddArray);
+      // let oddNumbers = numbers.filter((n) => n % 2 !== 0);
+
+      // console.log(oddNumbers);
+
+      let findOneOdd = numbers.find((n) => (n = n % 2 !== 0));
+      console.log(findOneOdd);
+
+      let index = numbers.findIndex((n) => n == 5);
+      console.log(index);
+
+      let some = numbers.some((n) => n % 2 !== 1);
+      console.log(some);
+      let e = numbers.every((n) => n % 2 !== 1);
+      console.log(e);
+
+      let total = numbers.reduce((a, c) => a + c, 55);
+      console.log(total);
+      let arr1 = [9, 8, 7];
+      let arr2 = [6, 5, 4];
+      let con = arr1.concat(arr2);
+      console.log(con);
+
+      let wholeArray = [
+        [1, 2, 3, 4, 5],
+        [6, 7, 8, 9, 10],
+        [11, 12, 13, 14, 15],
+      ];
+      console.log(wholeArray[0]);
+      console.log(wholeArray[1]);
+      console.log(wholeArray[2]);
+
+      //Flatten
+      let flatArray = [...wholeArray[0], ...wholeArray[1], ...wholeArray[2]];
+      console.log(flatArray);
+
+      let flatArray1 = wholeArray.map((a) => {
+        return [a];
+      });
+      console.log(flatArray1);
+
+      let flat = wholeArray.reduce((acc, curr) => acc.concat(curr), []);
+      console.log(flat);
+    </script>
+  </body>
+</html>
