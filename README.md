@@ -6,6 +6,6 @@
 
 ***
 
-# Thank You Masync Tech Coding School For best Explainations and Practicals, will be Thankful to you Forever, Sir[here their link](https://masynctech.com/)
+# Thank You Masync Tech Coding School For best Explainations and Practicals, will be Thankful to you Forever, Sir [link](https://masynctech.com/) :six_pointed_star:
 
 
