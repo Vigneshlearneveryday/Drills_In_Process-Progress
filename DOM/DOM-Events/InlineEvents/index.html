@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline Event Handler</title>
+    <style>
+      body {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+      }
+      button {
+        width: 300px;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        border: none;
+        background-color: #f7ccaf;
+      }
+      div {
+        margin: 50px 0px 70px 0px;
+        border-radius: 50px;
+        padding: 30px;
+        text-align: center;
+        background-color: #f7ccaf;
+      }
+      .input {
+        padding: 20px;
+        border: none;
+        background-color: #f4efe9;
+        border-radius: 10px;
+        margin: 10px;
+      }
+      .input2{
+        padding: 10px;
+        border: none;
+        background-color: #f4efe9;
+        border-radius: 10px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Mouse Events-->
+    <button onclick="clickHandler()">Click Here</button>
+    <button ondblclick="dbClickHandler()">Double Click Me</button>
+    <div onmouseover="onMouseOverHandler()" onmouseout="onMouseOutHandler()">
+      Hover Over Me
+    </div>
+
+    <!--Keyboard Events-->
+    <input
+      onkeydown="onKeyDownHandler()"
+      onkeyup="onKeyUpHandler()"
+      onkeypress="onKeyPressHandler()"
+      type="text"
+      placeholder="Enter your intrest here"
+      class="input"
+    />
+
+    <!--Form Events-->
+    <form onsubmit="onsubmitHandler()">
+      <input onfocus="onfocusHandler()" type="text" class="input2" />
+      <button type="submit">Submit</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
