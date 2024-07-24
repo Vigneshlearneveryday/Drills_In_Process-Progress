@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Delegation</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #fff;
+      }
+      #outerDiv {
+        background-color: #e0e0e0;
+        border-radius: 10px;
+      }
+      ul {
+        text-align: center;
+        list-style-type: none;
+        padding: 10px;
+        margin: 10px;
+        width: 200px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      li {
+        padding: 10px;
+        height: 50px;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        transition: background-color 0.3s;
+      }
+
+      li:hover {
+        background-color: #f0f0f0;
+      }
+
+      li.active {
+        background-color: #e0e0e0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outerDiv">
+      <ul id="itemList">
+        <li data-item="1">Project 1</li>
+        <li data-item="2">Project 2</li>
+        <li data-item="3">Project 3</li>
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
