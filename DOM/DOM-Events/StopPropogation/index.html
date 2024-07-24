@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop Propagation</title>
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      #outerDiv {
+        background: #5fa452;
+        margin-top: 50px;
+        text-align: right;
+        padding: 20px 20px;
+        border-radius: 8px;
+        position: relative;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      #middleDiv {
+        background-color: #4caf50;
+        padding: 20px;
+        border-radius: 10px;
+        position: relative;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      #innerDiv {
+        background-color: #66bb6a;
+        padding: 20px;
+        border-radius: 10px;
+        position: relative;
+        margin: 10px 0px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      #outerDiv:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      }
+      #middleDiv:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      }
+      #innerDiv:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outerDiv">
+      Outer Div
+      <div id="middleDiv">
+        Middle Div
+        <div id="innerDiv">Inner Div</div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
