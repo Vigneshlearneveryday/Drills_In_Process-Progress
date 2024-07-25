@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set Time Out VS Set Interval</title>
+    <style>
+      div {
+        padding: 20px;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+      header h1 {
+        color: #f0f0f0;
+      }
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      h2 {
+        color: #555;
+        margin-top: 20px;
+      }
+      p {
+        color: #777;
+        line-height: 1.4;
+      }
+      pre {
+        background-color: #f0f0f0;
+        padding: 10px;
+        border: 1px solid#ccc;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      code {
+        font-family: "Courier New", Courier, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Set Time Out And Set Interval In Javascript</h1>
+    </header>
+    <div class="container">
+      <h2>SetTimeout</h2>
+      <p>
+        The <code>SetTimeout</code> Function in Javascript is used to schedule
+        the execution of a code block after a specified delay in millisecods. It
+        allows you to create time-based delay in your code.
+      </p>
+      <p>Here's an example of using <code>SetTimeout</code>:</p>
+      <pre>
+        <code>
+            setTimeout(function(){
+                console.log("This code will run after a 2-second delay");
+            },2000);
+        </code>
+      </pre>
+      <h2>SetInterval</h2>
+      <p>
+        The<code>setInterval</code> function is used to repeatedly execute a
+        function or code block at a specified time interval in millisecods. It
+        can be used for tasks such as creating animations or periodically
+        checking for updated.
+      </p>
+      <p>Here's an example of using <code>SetInterval</code>:</p>
+      <pre>
+        <code>
+            setInterval(function(){
+                console.log("This code will run every 3 seconds");
+            },2000);
+        </code>
+      </pre>
+      <h2>Conclusion</h2>
+      <p>
+        <code>setTimeout</code> and <code>setInterval</code> are essential
+        functions in Javascript for managing time-based actions in your code.
+        Understanfding their usage is important for building a dynamic and
+        interactive web application.
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
