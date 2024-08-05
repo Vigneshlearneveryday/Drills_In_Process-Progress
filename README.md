@@ -1,5 +1,5 @@
 # Personnel Training Space to learn gitHub and Myself - I will never be Wise, I know ! But This journey is trying to be wise in Everything ... & Trying with Lots of distractions in middle of this intensions are Pure Always !!!
-## please igonre these stupidities 
+## Please igonre these stupidities 
 ## To track my errors i made this as well as to Revisit in future for Laughing ...
 
 ---
