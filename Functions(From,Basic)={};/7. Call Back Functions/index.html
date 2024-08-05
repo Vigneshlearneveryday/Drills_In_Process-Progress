@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Call Back Functions Practice</title>
+
+    <style>
+      body {
+        font-family: "open sans", sans-serif;
+        background-color: #f7f9fc;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+      }
+      header {
+        background-color: #4a90e2;
+        color: #fff;
+        font-size: 26px;
+        text-align: center;
+        padding: 20px 0;
+      }
+      .container {
+        max-width: 850px;
+        margin: 40px auto;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        padding: 30px 40px;
+      }
+      h1 {
+        color: #333;
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      h2 {
+        color: #4a90e2;
+        font-size: 20px;
+        margin-top: 40px;
+      }
+      p {
+        color: #555;
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      pre {
+        background-color: #f5f5f5;
+        padding: 15px;
+        border: 1px solid #e1e1e1;
+        border-radius: 5px;
+        overflow-x: auto;
+        font-size: 16px;
+        margin-top: 15px;
+      }
+      code {
+        font-family: "Roberto mono", monospace;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Callback Functions in JavaScript</header>
+    <div class="container">
+      <h2>What is callback</h2>
+      <p>
+        A callback function that is passed to another function as an argument
+        and is executed after the first function has completed. Callback are
+        often used in asynchronous to handle the result or error of the
+        operation.
+      </p>
+      <h2>Basic Example</h2>
+      <p>
+        Below is an example of a function that accepts another function as its
+        argument and calls it as a callback :
+      </p>
+      <pre>
+        <code>
+            function greetUser(name, callback) {
+                console.log("Hello, + name")
+                callback;
+            }
+
+            function sayGoodbye () {
+                console.log("GoodBye!");
+            }
+
+            greetUser("Rahul", sayGoodbye);
+            // Expected output :
+            // Hello Rahul
+            // GoodBye! 
+        </code>
+      </pre>
+
+      <h2>Callback in Asynchronous operations</h2>
+      <p>
+        Callbacks are often used in asynchronous functions, such as reading
+        files or fetching data from a server. Here's an example using
+        `setTimeout` function to simulate an asynchronous operation.
+      </p>
+      <pre>
+        <code>
+            function fetchData(callback) {
+                setTimeout(function(){
+                    let data = "'Sample Data'";
+                    callback(data);
+                }, 3000);
+            }
+            
+            fetchData (function(data) {
+                console.log(data);
+            });
+
+            // Expected output (after 3 seconds );
+            // Sample Data
+        </code>
+      </pre>
+      <h2>Conclusion</h2>
+      <p>
+        Callback functions provide a way to manage asynchronous operation and handle results or errors. While they're powerful, it's essential to be cautious with nested callbacks to avoid the "callback hell" scenario.
+        Modern JavaScript offers alternatives like Promises and async/await for better asynchronous code management.
+
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
