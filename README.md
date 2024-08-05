@@ -1,4 +1,6 @@
-# Personnel Training Space 
+# Personnel Training Space to learn gitHub and Myself 
+## please igonre these stupidities 
+## To track my errors i made this as well as to Revisit in future for Laughing ...
 
 ---
 ## Novice Developer
