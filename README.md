@@ -8,7 +8,7 @@
 
 ***
 
-# Thank You Masync Tech Coding School For The best Explainations and Practical Guidance, will be Thankful to you Forever Sir.Tweneboah, :clap: :sunrise:
+# Thank You Masync Tech Coding School For The best Explainations and Practical Guidance, will be Thankful to you Forever Sir.Tweneboah :kissing_heart:, :clap: :sunrise:
 [Masync Tech Coding School](https://masynctech.com/) :six_pointed_star:
 
 ***
